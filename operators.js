@@ -90,4 +90,47 @@ function CheckOr(value1, value2) {
 console.log(CheckOr(12, 15))
 
 
+//Task 13:  Write a program that uses the !  operator to negate a condition and log the result to the console.
+function CheckNot(value1) {
+    if (typeof(value1) !== 'string') return value1
+}
+
+console.log(CheckNot(12))
+
+//Taks 14:  Write a program that uses the ternary operator to check if a number is positive or negative and log the result to the console.
+function checkTernary(num) {
+    if (num === 0) return `the number should be above or below ${num}`
+
+    let answer;
+    num >= 0 ? answer = `the number ${num} is positive` : answer = `the number ${num} is a negative number`;
+
+    return answer
+}
+
+console.log(checkTernary(20))
+
+// Feature request:
+// 01: : Write a script that performs basic arithmetic operations (addition, subtraction, multiplication, division, remainder) on two numbers and logs the results.
+function arithmeticOperation(num1, num2) {
+    console.log(num1 + num2)
+    console.log(num1 - num2)
+    console.log(num1 * num2)
+    console.log(num2 % num1)
+}
+
+console.log(arithmeticOperation(5, 10))
+
+// 02: : Create a script that compares two numbers using different comparison operators and combines conditions using logical operators, logging the results.
+function comparison(num1, num2) {
+    console.log(num1 > num2)
+    console.log(num1 < num2)
+    console.log(num1 == num2)
+    console.log(num1 === num2)
+    console.log(num1 !== num2)
+    console.log(num1 > num2 || num1 < num2)
+    console.log(num1 > num2 && typeof(num1) === 'number')
+}
+
+comparison(30, 15)
+
  
