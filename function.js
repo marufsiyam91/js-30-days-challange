@@ -49,3 +49,19 @@ const checkChar = (string, subString) => {
 }
 
 console.log(checkChar('logarithm', 'ri'))
+
+// Task 07:  Write a function that takes two parameters and returns their product. Provide a default value for the second parameter.
+const parameter = (param1, param2 = 'works') => {
+    const product = `the ${param1} ${param2} and return the value`
+    return product
+}
+
+console.log(parameter('function'))
+
+// Taks 08:  Write a function that takes a person's name and age and returns a greeting message. Provide a default value for the age.
+const greeting = (name, age = 20) => {
+    const greet = `welcome mr ${name} with staying ${age} years of time in the world`
+    return greet
+}
+
+console.log(greeting('mahin', 25))
