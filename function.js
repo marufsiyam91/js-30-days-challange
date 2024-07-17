@@ -24,3 +24,28 @@ const findMax = function (value1, value2) {
 }
 
 findMax(15, 30)
+
+// Task 04:  Write a function expression to concatenate two strings and return the result.
+const concatString = function (str1, str2) {
+    // const concatedString = str1 + ' ' + str2;
+    const concatedString = str1.concat(str2);
+    return concatedString
+}
+
+console.log(concatString('srting', ' concated'))
+
+// Task 05:  Write an arrow function to calculate the sum of two numbers and return the result.
+const calculateSum = (num1, num2) => {
+    const sum = num1 + num2
+    return sum
+}
+
+console.log(calculateSum(5, 8))
+
+// Task 06:  Write an arrow function to check if a string contains a specific character and return a boolean value.
+const checkChar = (string, subString) => {
+    const result = string.includes(subString) ? true : false
+    return result
+}
+
+console.log(checkChar('logarithm', 'ri'))
